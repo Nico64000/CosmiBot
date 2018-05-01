@@ -20,7 +20,7 @@ bot.on('ready', () => {
 	console.log("Bot Ready !");
 });
 
-bot.login('NDM5NzMzODEwNzA4NjExMDcy.DcXdlA.u-rLpx3JnqqeXCdjEb0pQ6wqpcQ');
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 	if (message.content === "ping"){
